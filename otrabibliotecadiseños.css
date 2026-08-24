@@ -1,0 +1,180 @@
+/* =========================
+BODY
+   ========================= */
+
+body {
+    /* Tipo de letra */
+    font-family: Arial;
+
+    /* Color de fondo */
+    background-color: lightgray;
+
+    /* Color de las letras */
+    color: black;
+
+    /* Centrar el texto */
+    text-align: center;
+}
+
+
+/* =========================TÍTULOS
+   ========================= */
+
+h1 {
+    /* Tamaño del título */
+    font-size: 40px;
+
+    /* Color */
+    color: blue;
+
+    /* Espacio alrededor */
+    margin: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    color: red;
+}
+
+
+/* =========================
+CONTENEDOR
+   ========================= */
+
+.contenedor {
+    /* Activa Flexbox */
+    display: flex;
+
+    /* Elementos en fila */
+    flex-direction: column;
+
+    /* Centrar horizontalmente */
+    justify-content: center;
+
+    /* Centrar verticalmente */
+    align-items: center;
+
+    /* Espacio entre elementos */
+    gap: 20px;
+
+    /* Fondo */
+    background-color: rgb(169, 0, 0);
+
+    /* Borde */
+    border: 6px solid rgb(85, 0, 254);
+
+    /* Espacio por dentro */
+    padding: 20px;
+
+    /* Espacio por fuera */
+    margin: 20px;
+}
+
+
+/* =========================
+TARJETAS
+   ========================= */
+
+.card {
+    /* Ancho */
+    width: 200px;
+
+    /* Fondo */
+    background-color: lightblue;
+
+    /* Borde */
+    border: 2px solid blue;
+
+    /* Espacio interno */
+    padding: 20px;
+
+    /* Esquinas redondeadas */
+    border-radius: 10px;
+}
+
+
+/* =========================
+BOTONES
+   ========================= */
+
+button {
+    /* Tamaño interno */
+    padding: 10px 20px;
+
+    /* Fondo */
+    background-color: blue;
+
+    /* Color del texto */
+    color: white;
+
+    /* Quitar borde */
+    border: none;
+
+    /* Esquinas redondeadas */
+    border-radius: 5px;
+
+    /* Tamaño del texto */
+    font-size: 16px;
+
+    /* Cambia el cursor a una mano */
+    cursor: pointer;
+}
+
+
+/* Cuando pasas el mouse por encima */
+button:hover {
+    /* Cambia el color */
+    background-color: darkblue;
+}
+
+
+/* =========================
+IMGENES
+   ========================= */
+
+img {
+    /* Ancho máximo */
+    max-width: 100%;
+
+    /* Esquinas redondeadas */
+    border-radius: 10px;
+}
+
+
+/* =========================
+TEXTO
+   ========================= */
+
+p {
+    /* Tamaño */
+    font-size: 18px;
+
+    /* Espacio */
+    margin: 10px;
+}
+
+
+/* =========================
+CLASES ÚTILES
+   ========================= */
+
+.texto-rojo {
+    color: red;
+}
+
+.texto-azul {
+    color: blue;
+}
+
+.texto-verde {
+    color: green;
+}
+
+.fondo-amarillo {
+    background-color: yellow;
+}
+
+.fondo-negro {
+    background-color: black;
+    color: white;
+}

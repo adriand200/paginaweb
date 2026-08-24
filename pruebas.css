@@ -1,0 +1,41 @@
+.contenedor {
+display: flex;
+flex-direction: column-reverse;
+border: 5px solid rgb(12, 214, 214);
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 0.75rem;
+background-color: rgb(251, 255, 0);
+}
+.contenedor1 {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap-reverse;
+border: 5px solid rgb(240, 0, 212);
+justify-content: center;
+align-items: flex-start;
+gap: 0.75rem;
+background-color: rgb(35, 115, 212);
+}
+.contenedor3 {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: flex-end;
+align-items: stretch;
+gap: 0.75rem;
+border: 5px solid rgb(200, 255, 0);
+background-color: rgb(0, 0, 0);
+}
+.contenedor4 {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: stretch;
+gap: 0.75rem;
+border: 5px solid rgb(124, 157, 3);
+background-color: rgb(255, 0, 0);   
+color: rgb(36, 7, 141);
+}

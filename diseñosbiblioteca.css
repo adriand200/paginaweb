@@ -1,0 +1,493 @@
+/* =====================================================
+/   CONFIGURACIÓN GENERAL
+   ===================================================== */
+
+/* 
+   * afecta TODOS los elementos de la página.
+/   box-sizing: border-box hace que los tamaños sean
+/   más fáciles de controlar.
+*/
+* {
+    box-sizing: border-box;
+
+    /* Quita los márgenes que pone el navegador automáticamente */
+    margin: 0;
+
+    /* Quita los espacios internos automáticos */
+    padding: 0;
+}
+
+
+/* =====================================================
+/   BODY
+   ===================================================== */
+
+body {
+    /* Tipo de letra que tendrá toda la página */
+    font-family: Arial, sans-serif;
+
+    /* Color de fondo de TODA la página */
+    background-color: #f4f4f4;
+
+    /* Color de las letras */
+    color: #222;
+
+    /* Espacio entre las líneas de texto */
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+/   TÍTULOS
+   ===================================================== */
+
+h1 {
+    /* Hace el título grande */
+    font-size: 40px;
+
+    /* Centra el texto */
+    text-align: center;
+
+    /* Deja espacio alrededor del título */
+    margin: 20px;
+}
+
+h2 {
+    /* Tamaño del segundo título */
+    font-size: 30px;
+
+    /* Espacio debajo */
+    margin-bottom: 15px;
+}
+
+h3 {
+    /* Tamaño del tercer título */
+    font-size: 22px;
+
+    /* Espacio debajo */
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+/   PÁRRAFOS
+   ===================================================== */
+
+p {
+    /* Tamaño de las letras */
+    font-size: 17px;
+
+    /* Espacio debajo del párrafo */
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+/   CONTENEDOR
+   ===================================================== */
+
+.contenedor {
+
+    /* El contenedor ocupará el 90% de la pantalla */
+    width: 90%;
+
+    /* Pero nunca será más ancho de 1100px */
+    max-width: 1100px;
+
+    /* Lo centra horizontalmente */
+    margin: 30px auto;
+
+    /* Espacio entre el contenido y los bordes */
+    padding: 25px;
+
+    /* Fondo blanco */
+    background-color: white;
+
+    /* Redondea las esquinas */
+    border-radius: 15px;
+
+    /* Le pone una sombra */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =====================================================
+/   FLEXBOX
+   ===================================================== */
+
+/*
+/   Pone los elementos uno al lado del otro.
+*/
+.flex {
+    display: flex;
+
+    /* Espacio entre los elementos */
+    gap: 20px;
+}
+
+
+/*
+/   CENTRAR ELEMENTOS CON FLEXBOX
+*/
+.flex-centro {
+    display: flex;
+
+    /* Centra horizontalmente */
+    justify-content: center;
+
+    /* Centra verticalmente */
+    align-items: center;
+
+    /* Espacio entre elementos */
+    gap: 20px;
+}
+
+
+/*
+/   ELEMENTOS EN COLUMNA
+*/
+.flex-column {
+    display: flex;
+
+    /* Los elementos quedan uno debajo del otro */
+    flex-direction: column;
+
+    /* Espacio entre ellos */
+    gap: 15px;
+}
+
+
+/*
+/   FLEX-WRAP
+*/
+.flex-wrap {
+    display: flex;
+
+    /*
+/       Si no caben los elementos,
+/       pasan a la siguiente línea.
+    */
+    flex-wrap: wrap;
+
+    /* Espacio entre elementos */
+    gap: 20px;
+}
+
+
+/* =====================================================
+/   TARJETAS
+   ===================================================== */
+
+.card {
+
+    /* Ancho de la tarjeta */
+    width: 280px;
+
+    /* Espacio interno */
+    padding: 20px;
+
+    /* Fondo blanco */
+    background-color: white;
+
+    /* Esquinas redondeadas */
+    border-radius: 15px;
+
+    /* Sombra alrededor */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    /* Hace que los cambios sean suaves */
+    transition: 0.3s;
+}
+
+
+/*
+/   :hover significa:
+/   "cuando pongo el mouse encima".
+*/
+.card:hover {
+
+    /* La tarjeta sube 5px */
+    transform: translateY(-5px);
+}
+
+
+/* =====================================================
+/   BOTONES
+   ===================================================== */
+
+button {
+
+    /* Espacio interno arriba/abajo y derecha/izquierda */
+    padding: 12px 25px;
+
+    /* Quita el borde */
+    border: none;
+
+    /* Redondea las esquinas */
+    border-radius: 8px;
+
+    /* Fondo AZUL */
+    background-color: #007bff;
+
+    /* Letras BLANCAS */
+    color: white;
+
+    /* Tamaño de las letras */
+    font-size: 16px;
+
+    /* El cursor se convierte en una manito */
+    cursor: pointer;
+
+    /* Animación suave */
+    transition: 0.3s;
+}
+
+
+/*
+/   Cuando pasas el mouse por encima del botón:
+*/
+button:hover {
+
+    /* El botón se vuelve azul oscuro */
+    background-color: #0056b3;
+
+    /* Aumenta un poquito su tamaño */
+    transform: scale(1.05);
+}
+
+
+/* =====================================================
+/   IMÁGENES
+   ===================================================== */
+
+img {
+
+    /*
+/       La imagen nunca será más grande
+/       que su contenedor.
+    */
+    max-width: 100%;
+
+    /* Mantiene la proporción */
+    height: auto;
+
+    /* Esquinas redondeadas */
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+/   BARRA DE NAVEGACIÓN
+   ===================================================== */
+
+nav {
+
+    /* Activa Flexbox */
+    display: flex;
+
+    /* Centra los elementos horizontalmente */
+    justify-content: center;
+
+    /* Centra verticalmente */
+    align-items: center;
+
+    /* Espacio entre los enlaces */
+    gap: 25px;
+
+    /* Espacio interno */
+    padding: 20px;
+
+    /* Fondo NEGRO */
+    background-color: #222;
+}
+
+
+nav a {
+
+    /* Letras BLANCAS */
+    color: white;
+
+    /* Quita el subrayado */
+    text-decoration: none;
+
+    /* Tamaño */
+    font-size: 18px;
+}
+
+
+/* Cuando pasas el mouse sobre los enlaces */
+nav a:hover {
+
+    /* Se vuelven AZULES */
+    color: #00aaff;
+}
+
+
+/* =====================================================
+/   FORMULARIOS
+   ===================================================== */
+
+input,
+textarea,
+select {
+
+    /* Ocupan todo el ancho disponible */
+    width: 100%;
+
+    /* Espacio interno */
+    padding: 12px;
+
+    /* Espacio debajo */
+    margin-bottom: 15px;
+
+    /* Borde gris */
+    border: 1px solid #ccc;
+
+    /* Esquinas redondeadas */
+    border-radius: 8px;
+
+    /* Tamaño del texto */
+    font-size: 16px;
+}
+
+
+/*
+/   :focus significa que el usuario
+/   está haciendo clic/escribiendo ahí.
+*/
+input:focus,
+textarea:focus,
+select:focus {
+
+    /* Quita el borde predeterminado */
+    outline: none;
+
+    /* Aparece un borde AZUL */
+    border: 2px solid #007bff;
+}
+
+
+/* =====================================================
+/   LISTAS
+   ===================================================== */
+
+ul {
+
+    /* Deja espacio a la izquierda */
+    padding-left: 25px;
+}
+
+
+li {
+
+    /* Espacio entre cada elemento */
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+/   COLORES DE TEXTO
+   ===================================================== */
+
+.texto-azul {
+    /* Texto AZUL */
+    color: #007bff;
+}
+
+.texto-rojo {
+    /* Texto ROJO */
+    color: #dc3545;
+}
+
+.texto-verde {
+    /* Texto VERDE */
+    color: #198754;
+}
+
+.texto-blanco {
+    /* Texto BLANCO */
+    color: white;
+}
+
+
+/* =====================================================
+/  COLORES DE FONDO
+   ===================================================== */
+
+.fondo-azul {
+
+    /* Fondo AZUL */
+    background-color: #007bff;
+
+    /* Texto BLANCO */
+    color: white;
+}
+
+.fondo-oscuro {
+
+    /* Fondo OSCURO */
+    background-color: #222;
+
+    /* Texto BLANCO */
+    color: white;
+}
+
+.fondo-verde {
+
+    /* Fondo VERDE */
+    background-color: #198754;
+
+    /* Texto BLANCO */
+    color: white;
+}
+
+
+/* =====================================================
+/  ALINEACIÓN DEL TEXTO
+   ===================================================== */
+
+.texto-centro {
+
+    /* Centra el texto */
+    text-align: center;
+}
+
+.texto-derecha {
+
+    /* Manda el texto hacia la derecha */
+    text-align: right;
+}
+
+
+/* =====================================================
+/   RESPONSIVE
+/ ===================================================== */
+
+/*
+/   Esto se aplica cuando la pantalla
+/   tiene máximo 600px de ancho.
+
+/   Por ejemplo: un celular.
+*/
+@media (max-width: 600px) {
+
+    /* El H1 se hace más pequeño */
+    h1 {
+        font-size: 30px;
+    }
+
+    /* Los elementos pasan a columna */
+    .flex {
+        flex-direction: column;
+    }
+
+    /* Las tarjetas ocupan todo el ancho */
+    .card {
+        width: 100%;
+    }
+
+    /* El menú también pasa a columna */
+    nav {
+        flex-direction: column;
+    }
+}

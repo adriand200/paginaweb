@@ -11,5 +11,7 @@ Diario Personal es una aplicación web que permite escribir, guardar y consultar
 - Express
 - Gemini API
 - LocalStorage
+- ##posible error de servidor
+- 503 significa que los servidores de Google están temporalmente sobrecargados
 ## Autor
 Adrian Cañón . Samuel Rodriguez.

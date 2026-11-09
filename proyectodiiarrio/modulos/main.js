@@ -11,6 +11,35 @@ import { analizarTexto } from "./analisis.js";
 
 const entrada = document.getElementById("entradaDiario");
 const boton = document.getElementById("guardarboton");
+const botonTema = document.getElementById("temaBoton");
+
+function aplicarTema(tema) {
+    document.body.setAttribute("data-tema", tema);
+
+    if (tema === "oscuro") {
+        botonTema.textContent = "Cambiar a modo claro";
+        botonTema.setAttribute("aria-pressed", "false");
+    } else {
+        botonTema.textContent = "Cambiar a modo oscuro";
+        botonTema.setAttribute("aria-pressed", "true");
+    }
+
+    localStorage.setItem("tema", tema);
+}
+
+const temaGuardado = localStorage.getItem("tema") || "oscuro";
+
+aplicarTema(temaGuardado);
+
+botonTema.addEventListener("click", function() {
+    const temaActual = document.body.getAttribute("data-tema");
+
+    if (temaActual === "oscuro") {
+        aplicarTema("claro");
+    } else {
+        aplicarTema("oscuro");
+    }
+});
 
 const entradasGuardadas = obtenerEntrada();
 

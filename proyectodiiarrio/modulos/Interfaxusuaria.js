@@ -1,3 +1,4 @@
+
 export function mostrarResultado(resultado) {
 
     const parafoanalisis = document.getElementById("resultadoAnalisis");
